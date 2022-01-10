@@ -71,19 +71,22 @@ namespace asp.netloginpage
         }
         public String getNume() { return this.nume; }
     }
-    /*
-    public class Locatie:User
+    
+    public class Locatie
     {
         public double latitudine { get; set; }
         public double longitudine { get; set; }
+        public string nume { get; set; }
         public int puncte { get; set; }
-        public Locatie(string nume, string parola)
+        public Locatie(double latitudine,double longitudine,string nume,int puncte)
         {
+            this.latitudine = latitudine;
+            this.longitudine = longitudine;
             this.nume = nume;
-            this.parola = parola;
+            this.puncte = puncte;
         }
     }
-    */
+    
 
 
 }
